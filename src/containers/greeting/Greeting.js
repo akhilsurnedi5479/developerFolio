@@ -3,6 +3,7 @@ import {Fade} from "react-reveal";
 import emoji from "react-easy-emoji";
 import "./Greeting.scss";
 import landingPerson from "../../assets/lottie/landingPerson";
+import landingPerson2 from "../../assets/lottie/landingPerson2";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
@@ -41,8 +42,9 @@ export default function Greeting() {
                 <Button text="Contact me" href="#contact" />
                 {greeting.resumeLink && (
                   <a
-                    href={require("./resume.pdf")}
-                    download="Resume.pdf"
+                  //href=   {require(greeting.resumeLink)}
+                  href={require("../../assets/Akhil_Resume.pdf")}
+                    download="Akhil_Resume.pdf"
                     className="download-link-button"
                   >
                     <Button text="Download my resume" />
@@ -53,7 +55,7 @@ export default function Greeting() {
           </div>
           <div className="greeting-image-div">
             {illustration.animated ? (
-              <DisplayLottie animationData={landingPerson} />
+              <DisplayLottie animationData={landingPerson2} />
             ) : (
               <img
                 alt="man sitting on table"

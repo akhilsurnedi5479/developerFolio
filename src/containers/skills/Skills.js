@@ -4,6 +4,8 @@ import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";
 import {illustration, skillsSection} from "../../portfolio";
 import {Fade} from "react-reveal";
 import codingPerson from "../../assets/lottie/codingPerson";
+import codingPerson2 from "../../assets/lottie/codingPerson2";
+
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import StyleContext from "../../contexts/StyleContext";
 
@@ -18,7 +20,7 @@ export default function Skills() {
         <Fade left duration={1000}>
           <div className="skills-image-div">
             {illustration.animated ? (
-              <DisplayLottie animationData={codingPerson} />
+              <DisplayLottie animationData={codingPerson2} />
             ) : (
               <img
                 alt="Man Working"

@@ -4,12 +4,13 @@
 
 import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
+import splashAnimation2 from "./assets/lottie/splashAnimation2";
 
 // Splash Screen
 
 const splashScreen = {
   enabled: true, // set false to disable splash screen
-  animation: splashAnimation,
+  animation: splashAnimation2,
   duration: 2000 // Set animation duration as per your animation
 };
 
@@ -20,26 +21,28 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "Akhil Surnedi",
+  title: "Hi all, I'm Akhil",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with Java / Angular / Reactjs and some other cool libraries and frameworks."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1BrN352ClVXIh0mGtO4Kc0ebHRuDHVSKp/view?usp=sharing", 
+    // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  github: "https://github.com/akhilsurnedi5479",
+  linkedin: "https://www.linkedin.com/in/akhilsurnedi5479/",
+  gmail: "akhilsurnedi5479@gmail.com",
+  //gitlab: "https://gitlab.com/akhilsurnedi5479",
+  //facebook: "https://www.facebook.com/saad.pasta7",
+  medium: "https://medium.com/@akhilsurnedi",
+  instagram:"https://www.instagram.com/mr_nerdy_a/",
+  //stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -51,6 +54,9 @@ const skillsSection = {
   title: "What I do",
   subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
+    emoji(
+      "⚡ Developed RESTful APIs and microservices"
+    ),
     emoji(
       "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
     ),
@@ -77,8 +83,12 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-sass"
     },
     {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
+      skillName: "Java",
+      fontAwesomeClassname: "fab fa-java"
+    },
+    {
+      skillName:"Angular",
+      fontAwesomeClassname:"fab fa-angular"
     },
     {
       skillName: "reactjs",
@@ -126,23 +136,12 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
-    },
-    {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
+      schoolName: "National Institute of Technology",
+      logo: require("./assets/images/nits.svg.png"),
+      subHeader: "Bachelor of Technology in Computer Science",
       duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, Database Design, Social Media Analytics",
+      descBullets: []
     }
   ]
 };
@@ -152,17 +151,18 @@ const educationInfo = {
 const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
-    {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
-    },
+    
     {
       Stack: "Backend",
-      progressPercentage: "70%"
+      progressPercentage: "90%"
+    },
+    {
+      Stack: "Frontend/Design", //Insert stack or technology you have experience in
+      progressPercentage: "80%" //Insert relative proficiency in percentage
     },
     {
       Stack: "Programming",
-      progressPercentage: "60%"
+      progressPercentage: "80%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -174,10 +174,10 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
+      role: "Senior Software Engineer",
+      company: "Citi",
+      companylogo: require("./assets/images/citiLogo.png"),
+      date: "May 2022 – Present",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       descBullets: [
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
@@ -185,17 +185,17 @@ const workExperiences = {
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
+      role: "Software Engineer",
+      company: "Cognizant(Amex)",
+      companylogo: require("./assets/images/cognizantLogo.png"),
+      date: "August 2019 – May 2022",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
+      role: "Associate Software Developer",
+      company: "Devathon",
+      companylogo: require("./assets/images/devathonLogo.png"),
+      date: "May 2018 – August 2019",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     }
   ]
@@ -239,7 +239,7 @@ const bigProjects = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
@@ -300,7 +300,7 @@ const achievementSection = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
@@ -324,7 +324,7 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -343,7 +343,7 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -356,7 +356,7 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Resume Section
@@ -373,17 +373,17 @@ const contactInfo = {
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
   number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  email_address: "akhilsurnedi5479@gmail.com"
 };
 
 // Twitter Section
 
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,
