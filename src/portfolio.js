@@ -5,7 +5,7 @@
 import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
 import splashAnimation2 from "./assets/lottie/splashAnimation2";
-
+import { Icon } from '@iconify/react';
 // Splash Screen
 
 const splashScreen = {
@@ -24,7 +24,7 @@ const greeting = {
   username: "Akhil Surnedi",
   title: "Hi all, I'm Akhil",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with Java / Angular / Reactjs and some other cool libraries and frameworks."
+    "A passionate Full Stack Software Developer 🚀 having an experience of building Web applications with Java / Angular / Reactjs and some other cool libraries and frameworks and deploying them using Docker"
   ),
   resumeLink:
     "https://drive.google.com/file/d/1BrN352ClVXIh0mGtO4Kc0ebHRuDHVSKp/view?usp=sharing", 
@@ -60,9 +60,9 @@ const skillsSection = {
     emoji(
       "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
+    emoji("⚡ Proficient in messaging services using Apache Kafa, JMS, RabbitMQ, and IBM MQ."),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "⚡ Experience in cloud technologies and cloud migraNon with AWS (EC2, ELB, Auto-Scaling, S3)."
     )
   ],
 
@@ -70,18 +70,6 @@ const skillsSection = {
 https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
-    {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
     {
       skillName: "Java",
       fontAwesomeClassname: "fab fa-java"
@@ -95,13 +83,26 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-react"
     },
     {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
+      skillName: "html-5",
+      fontAwesomeClassname: "fab fa-html5"
     },
     {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
+      skillName: "css3",
+      fontAwesomeClassname: "fab fa-css3-alt"
     },
+    {
+      skillName: "sass",
+      fontAwesomeClassname: "fab fa-sass"
+    },
+    
+    // {
+    //   skillName: "nodejs",
+    //   fontAwesomeClassname: "fab fa-node"
+    // },
+    // {
+    //   skillName: "swift",
+    //   fontAwesomeClassname: "fab fa-swift"
+    // },
     {
       skillName: "npm",
       fontAwesomeClassname: "fab fa-npm"
@@ -126,6 +127,7 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "docker",
       fontAwesomeClassname: "fab fa-docker"
     }
+    
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -139,7 +141,7 @@ const educationInfo = {
       schoolName: "National Institute of Technology",
       logo: require("./assets/images/nits.svg.png"),
       subHeader: "Bachelor of Technology in Computer Science",
-      duration: "September 2013 - April 2017",
+      duration: "September 2014 - April 2018",
       desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, Database Design, Social Media Analytics",
       descBullets: []
     }
@@ -178,10 +180,10 @@ const workExperiences = {
       company: "Citi",
       companylogo: require("./assets/images/citiLogo.png"),
       date: "May 2022 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      desc: "Involved in Requirements gathering, analysis, design, development, testing and Maintenance phases with Agile approach.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Building and maintaining large scale front-end applicaNons.",
+        "Developing web applicaNons using Java11.0, J2EE, and Spring Boot."
       ]
     },
     {
@@ -189,14 +191,18 @@ const workExperiences = {
       company: "Cognizant(Amex)",
       companylogo: require("./assets/images/cognizantLogo.png"),
       date: "August 2019 – May 2022",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      desc: "Actively involved in Analysis, Design, Development, System Testing and User Acceptance Testing. Followed agile methodology in the Scrum Cycle model",
+      descBullets:[
+        "Experience in J2EE environment based on Model View Controller (MVC) architecture for development using spring and utilized the features of Angular 8.0 to present effective web design.",
+        
+      ]
     },
     {
       role: "Associate Software Developer",
       company: "Devathon",
       companylogo: require("./assets/images/devathonLogo.png"),
       date: "May 2018 – August 2019",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      desc: "Designing and implementing the application using various Java and J2EE Design patterns design patterns such as Singleton, Business Delegate, MVC and Data Access Object (DAO)"
     }
   ]
 };
@@ -372,7 +378,7 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
+  number: "+1 647-836-4732",
   email_address: "akhilsurnedi5479@gmail.com"
 };
 
